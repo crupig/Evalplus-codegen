@@ -7,6 +7,7 @@ This fork was created as a support generation tool for the work "How Should We R
 * install `requirements.txt` (designed to work on Python `3.12`)
 
 **Replace scripts**:
+
 Replace all the scripts in `scripts_to_replace` in the `.venv/lib/python3.12/site-packages/evalplus` path.
 
 **To run code generation:**
