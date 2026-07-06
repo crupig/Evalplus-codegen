@@ -1,5 +1,5 @@
-## PEP notes
-This fork was created as a support generation tool for the work "How Should We Rank LLM Code Generations? A Comparative Study of  Selection Strategies". It was modified so that also the log probabilities of the generated tokens are extracted. Also the test scripts were modified accordingly.
+## Notes for replication of "Comparative Study of Selection Strategies"
+This repo was created as a support generation tool for the work "How Should We Rank LLM Code Generations? A Comparative Study of  Selection Strategies". It was modified so that also the log probabilities of the generated tokens are extracted. Also the evaluation scripts were modified to extract the test execution feedbacks.
 
 **To setup:**
 * clone the repo;
@@ -17,3 +17,9 @@ Replace all the scripts in `scripts_to_replace` in the `.venv/lib/python3.12/sit
 For example:
 
 ```bash run_gen.sh 0 Qwen/Qwen2.5-Coder-3B-Instruct```
+
+**Evaluation:**
+
+Example of commands to run the scripts (input file and number of workers):
+
+```bash run_eval.sh ./path_to_generation_file.jsonl```
