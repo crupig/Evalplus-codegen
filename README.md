@@ -29,7 +29,7 @@ Example of command to run the scripts (input file as argument):
 
 **Replace scripts**:
 
-Replace all the scripts in `scripts_to_replace` in the `.venv/lib/python3.12/site-packages/evalplus` path.
+Replace all the scripts in `scripts_to_replace_testcases` in the `.venv/lib/python3.12/site-packages/evalplus` path.
 
 ```bash run_gen_tests.sh <DEVICE_ID> <MODEL_PATH>```
 
