@@ -25,7 +25,7 @@ Example of command to run the scripts (input file as argument):
 ```bash run_eval.sh ./path_to_generation_file.jsonl```
 
 
-### Testcases generation:
+### Testcases generation (CodeT approach):
 
 **Replace scripts**:
 
@@ -39,12 +39,14 @@ For example:
 
 **To execute tests:**
 
+Within each model (generator) and each coding problem (task id), we have to run each generated code solution against each generated test case.
+
+`merge_generations_and_tests_b4_test_exec.py` creates and saves all the `<code_solution, test_statement>` pairs.
+
+After generating all the pairs, the tests can be run with:
+
 ```bash run_eval_tests.sh <PATH_TO_TESTS>```
 
 For example:
 
 ```bash run_eval_tests.sh ./path_to_generation_file.jsonl```
-
-Also run as:
-
-```bash ./run_eval_sequential.sh ./test-4-execution```
