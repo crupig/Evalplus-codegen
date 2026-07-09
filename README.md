@@ -1,7 +1,7 @@
 ## Notes for replication of "Comparative Study of Selection Strategies"
 This repo was created as a support generation tool for the work **"How Should We Rank LLM Code Generations? A Comparative Study of  Selection Strategies"**. 
 
-The original code generation frameworks have been modified in order to:
+The original code generation framework has been modified in order to:
 * extract the log-probabilities when generating code solutions;
 * extracting test execution feedbacks when evaluting the generated solutions;
 * generate test cases instead of code solutions (for the CodeT approach);
