@@ -7,7 +7,7 @@ The original code generation frameworks have been modified in order to:
 * generate test cases instead of code solutions (for the CodeT approach);
 * run the generated test cases against the previously generated code solutions.
   
-**To setup:**
+### To setup:
 * clone the repo;
 * create virtual environment;
 * install `requirements.txt` (designed to work on Python `3.12`)
@@ -31,7 +31,7 @@ Example of command to run the scripts (input file as argument):
 ```bash run_eval.sh ./path_to_generation_file.jsonl```
 
 
-### Testcases generation (CodeT approach):
+### Test cases generation (CodeT approach):
 
 **Replace scripts**:
 
