@@ -1,6 +1,12 @@
 ## Notes for replication of "Comparative Study of Selection Strategies"
-This repo was created as a support generation tool for the work **"How Should We Rank LLM Code Generations? A Comparative Study of  Selection Strategies"**. It was modified so that also the log probabilities of the generated tokens are extracted. Also the evaluation scripts were modified to extract the test execution feedbacks.
+This repo was created as a support generation tool for the work **"How Should We Rank LLM Code Generations? A Comparative Study of  Selection Strategies"**. 
 
+The original code generation frameworks have been modified in order to:
+* extract the log-probabilities when generating code solutions;
+* extracting test execution feedbacks when evaluting the generated solutions;
+* generate test cases instead of code solutions (for the CodeT approach);
+* run the generated test cases against the previously generated code solutions.
+  
 **To setup:**
 * clone the repo;
 * create virtual environment;
