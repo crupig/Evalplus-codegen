@@ -41,7 +41,7 @@ if __name__ == "__main__":
     for generated_by in kb['generated_by'].unique():
 
         # IMPORT TESTS KNOWLEDGE BASE
-        test_path = f"../knowlbase-tests/{generated_by}_knowlbase_tests_evalplus.jsonl"
+        test_path = f"../data/knowlbase-tests/{generated_by}_knowlbase_tests_evalplus.jsonl"
         if not os.path.exists(test_path):
             print(f"Test knowledge base file '{test_path}' not found. Skipping '{generated_by}'.")
             continue
