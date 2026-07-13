@@ -29,7 +29,7 @@ if __name__ == "__main__":
     kb['onwhichtomerge'] = kb['solution_idx'].apply(lambda x: x.split("--SampleID")[0])
     
     # FILTER KNOWLEDGE BASE TO TEST SET SOLUTIONS
-    with open("../data/finetuning/test_upto20_real.jsonl", "r") as f:
+    with open("../data/testset/test.jsonl", "r") as f:
         test_set_uptp20 = [json.loads(line) for line in f]
     test_set_uptp20 = pd.DataFrame(test_set_uptp20)
     solution_ids_to_keep = test_set_uptp20.solution_idx.unique().tolist()
@@ -50,8 +50,6 @@ if __name__ == "__main__":
         kbt_genby = kbt_genby.drop(columns=['task_idx', 'generated_by'])
 
         kb_genby = kb.loc[kb['generated_by'] == generated_by]
-
-        # print("genby:", generated_by, kb_genby.loc[kb_genby.solution_idx == "Python--Evalplus--TaskID::Mbpp/405--GeneratedBy::gemma-3-1b-it--SampleID::03"].shape)
     
         merged = kb_genby.merge(kbt_genby, on="onwhichtomerge", how="inner")
 
